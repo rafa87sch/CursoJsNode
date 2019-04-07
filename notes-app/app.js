@@ -1,5 +1,7 @@
-const fs=require('fs');
-//file into a write
-//fs.writeFileSync('notes.txt','this file was created by Rafa');
-//add to the file the comment I live on CR
-fs.appendFileSync('notes.txt',' I live on CR');
+const utils=require('./utils.js');
+const notes = require('./notes.js');
+const sum = utils(1,2);
+
+console.log(sum);
+console.log(notes());
+
